@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
 
 # HW Libs
 PRODUCT_PACKAGES += \
-    hwcomposer.default
+    hwcomposer.default \
+    camera.droid2we \
 
 # Wifi
 PRODUCT_PACKAGES += \
