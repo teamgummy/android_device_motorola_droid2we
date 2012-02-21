@@ -14,11 +14,11 @@
 
 LOCAL_PATH:= $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),ace)
+ifeq ($(TARGET_DEVICE),droid2we)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := camera.spade
+LOCAL_MODULE := camera.droid2we
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 
