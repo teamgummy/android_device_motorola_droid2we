@@ -10,6 +10,8 @@ LOCAL_MODULE         := camera.droid2we
 LOCAL_SRC_FILES      := cameraHal.cpp
 LOCAL_PRELINK_MODULE := false
 
+LOCAL_SRC_FILES += v4l2_utils.c overlay.cpp
+
 LOCAL_SHARED_LIBRARIES += \
     liblog \
     libutils \
@@ -19,10 +21,9 @@ LOCAL_SHARED_LIBRARIES += \
     libhardware \
     libcamera_client \
     libcamera \
-    libui
 
 LOCAL_SHARED_LIBRARIES += libdl
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif #BOARD_QCOM_BASED_CAMERA_HAL
+endif #TARGET_DEVICE
