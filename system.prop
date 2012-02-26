@@ -54,8 +54,6 @@ mot.proximity.distance=60
 ro.HorizontalBUA=true
 ro.HorizontalVVM=true
 
-ro.mot.master_clear.shredsd=false
-
 ro.mot.hw.calibratedImager=1
 
 ro.product.use_charge_counter=1
