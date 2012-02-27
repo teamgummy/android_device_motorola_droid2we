@@ -11,11 +11,6 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/droid2we/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-PRODUCT_PACKAGES := \
-    rild \
-    libril \
-    libreference-ril
-
 # Audio
 PRODUCT_COPY_FILES += \
     device/motorola/droid2we/audio/libaudio.so:/system/lib/libaudio.so \
@@ -27,21 +22,28 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaudioutils
 
-# OMX
+# HW Libs
 PRODUCT_PACKAGES += \
-    dspexec \
-    libbridge \
-    libstagefrighthw
+    hwcomposer.default \
+    camera.droid2we
 
 # Modem
 PRODUCT_PACKAGES += \
     libreference-cdma-sms \
     radiooptions
 
-# HW Libs
+# OMX
 PRODUCT_PACKAGES += \
-    hwcomposer.default \
-    camera.droid2we \
+    dspexec \
+    libbridge \
+    libstagefrighthw \
+    libstagefright_omx
+
+# Radio
+PRODUCT_PACKAGES := \
+    rild \
+    libril \
+    libreference-ril
 
 # Wifi
 PRODUCT_PACKAGES += \
