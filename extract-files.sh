@@ -71,7 +71,6 @@ adb pull /system/bin/tcmd ../../../vendor/motorola/$DEVICE/proprietary/bin
 adb pull /system/bin/testpppd ../../../vendor/motorola/$DEVICE/proprietary/bin
 adb pull /system/bin/tstmetainfo ../../../vendor/motorola/$DEVICE/proprietary/bin
 adb pull /system/bin/usbd ../../../vendor/motorola/$DEVICE/proprietary/bin
-adb pull /system/bin/battd ../../../vendor/motorola/$DEVICE/proprietary/bin
 
 adb pull /system/etc/amazon-kindle.properties ../../../vendor/motorola/$DEVICE/proprietary/etc
 adb pull /system/etc/backup_targets.csv ../../../vendor/motorola/$DEVICE/proprietary/etc
@@ -203,15 +202,11 @@ adb pull /system/lib/libnmea.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libril_rds.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/librds_util.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libsmiledetect.so ../../../vendor/motorola/$DEVICE/proprietary/lib
-adb pull /system/lib/libsmiledetect.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libLCML.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libbridge.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libmotorola_ril.so ../../../vendor/motorola/$DEVICE/proprietary/lib
-adb pull /system/lib/libpppd_plugin-ril.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libreference-ril.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libril.so ../../../vendor/motorola/$DEVICE/proprietary/lib
-adb pull /system/lib/libril_rds.so ../../../vendor/motorola/$DEVICE/proprietary/lib
-adb pull /system/lib/libbattd.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 adb pull /system/lib/libusc.so ../../../vendor/motorola/$DEVICE/proprietary/lib
 
 
@@ -432,11 +427,8 @@ PRODUCT_COPY_FILES += \\
     vendor/motorola/__DEVICE__/proprietary/lib/libsmiledetect.so:/system/lib/libsmiledetect.so \\
     vendor/motorola/__DEVICE__/proprietary/lib/libbridge.so:/system/lib/libbridge.so \\
     vendor/motorola/__DEVICE__/proprietary/lib/libLCML.so:/system/lib/libLCML.so \\
-    vendor/motorola/__DEVICE__/proprietary/lib/libmotorola_ril.so:/system/lib/libmotorola_ril.so \\
-    vendor/motorola/__DEVICE__/proprietary/lib/libpppd_plugin-ril.so:/system/lib/libpppd_plugin-ril.so \\
     vendor/motorola/__DEVICE__/proprietary/lib/libreference-ril.so:/system/lib/libreference-ril.so \\
     vendor/motorola/__DEVICE__/proprietary/lib/libril.so:/system/lib/libril.so \\
-    vendor/motorola/__DEVICE__/proprietary/lib/libril_rds.so:/system/lib/libril_rds.so \\
     vendor/motorola/__DEVICE__/proprietary/lib/libbattd.so:/system/lib/libattd.so \\
     vendor/motorola/__DEVICE__/proprietary/bin/battd.so:/system/bin/battd \\
     vendor/motorola/__DEVICE__/proprietary/lib/libusc.so:/system/lib/libusc.so \\
