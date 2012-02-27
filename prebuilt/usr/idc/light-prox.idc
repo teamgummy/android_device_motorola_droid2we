@@ -13,11 +13,8 @@
 # limitations under the License.
 
 #
-# Droid2 Global cpcap Input Device Configuration
+# Droid2 Global Light/Proximity Input Device Configuration
 #
 # Initial revision by bikedude880
 
 device.internal = 1
-
-keyboard.layout = cpcap-key
-keyboard.characterMap = cpcap-key
