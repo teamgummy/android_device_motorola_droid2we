@@ -40,7 +40,6 @@ ro.sf.lcd_density=240
 windowsmgr.max_events_per_sec=70
 
 # System
-dalvik.vm.heapsize=64m
 ro.mot.dpmext = true
 ro.mot.master_clear.shredsd=false
 ro.product.use_charge_counter=1
@@ -62,3 +61,4 @@ ro.HorizontalBUA=true
 ro.HorizontalVVM=true
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+
