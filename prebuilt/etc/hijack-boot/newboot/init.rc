@@ -27,18 +27,9 @@ loglevel 8
     export LOOP_MOUNTPOINT /mnt/obb
     export BOOTCLASSPATH /system/framework/core.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/apache-xml.jar:/system/framework/filterfw.jar
 
-# Backward compatibility
-    symlink /system/etc /etc
-    symlink /sys/kernel/debug /d
-    symlink /mnt/sdcard /sdcard
-
-# Right now vendor lives on the same filesystem as system,
-# but someday that may change.
-    symlink /system/vendor /vendor
-
 # Create cgroup mount point for cpu accounting
     mkdir /acct
-    mount cgroup none /acct cpuacct
+#    mount cgroup none /acct cpuacct
     mkdir /acct/uid
 
     mkdir /system
@@ -106,6 +97,15 @@ on fs
     mount yaffs2 mtd@cache /cache nosuid nodev
 
 on post-fs
+# Backward compatibility
+    symlink /system/etc /etc
+    symlink /sys/kernel/debug /d
+    symlink /mnt/sdcard /sdcard
+
+# Right now vendor lives on the same filesystem as system,
+# but someday that may change.
+    symlink /system/vendor /vendor
+
     # once everything is setup, no need to modify /
     mount rootfs rootfs / ro remount
 
@@ -470,6 +470,8 @@ service netd /system/bin/netd
     class main
     socket netd stream 0660 root system
     socket dnsproxyd stream 0660 root inet
+    socket netlink stream 0660 root system
+    socket quota2 stream 0660 root system
 
 service debuggerd /system/bin/debuggerd
     class main

@@ -446,6 +446,12 @@ service baseimage /system/bin/dspexec -v -T /system/lib/dsp/baseimage.dof
     group media graphics
     oneshot
 
+service fmradio /system/bin/fmradioserver
+    class main
+    disabled
+    user system
+    group bluetooth net_bt_admin net_raw net_admin misc
+
 # 3D init
 service pvrsrvinit /system/bin/pvrsrvinit
     class core
