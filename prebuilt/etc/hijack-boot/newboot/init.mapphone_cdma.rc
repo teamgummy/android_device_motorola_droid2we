@@ -90,15 +90,15 @@ on post-fs
     write /dev/usb_device_mode charge_adb
     write /tmp/usbd_current_state usb_mode_charge_adb
     chmod 0666 /tmp/usbd_current_state
-    
+
     # following two dirs are for storing BP Flex and PDS files. NVM Daemon is using these folders
     mkdir /data/bp_nvm
     chown radio radio /data/bp_nvm
     chmod 0770 /data/bp_nvm
     mkdir /pds/bp_nvm
     chown radio radio /pds/bp_nvm
-    chmod 0770 /pds/bp_nvm    
-    
+    chmod 0770 /pds/bp_nvm
+
     # Tweaks
     write /sys/block/mmcblk0/bdi/read_ahead_kb 2048
 
@@ -182,7 +182,7 @@ on init
 
     # Temp workaround for HP library cleanup
     symlink /dev/hp3a-omap /dev/hp3A-omap
-    
+
     # Permissions for video
     chmod 0770 /dev/hp3a-omap
     chmod 0770 /dev/hplens-omap
@@ -221,8 +221,8 @@ on boot
     # Enable panic on softlockup
     write /proc/sys/kernel/softlockup_panic 1
 
-    setprop ro.build.product shadow
-    setprop ro.product.device shadow
+#    setprop ro.build.product shadow
+#    setprop ro.product.device shadow
 
 # Define Motorola DBVC ATVC Property defaults (failsafe properties)
     setprop ro.sys.atvc_allow_netmon_usb 0
