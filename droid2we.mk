@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += \
     device/motorola/droid2we/audio/libaudio.so:/system/lib/libaudio.so \
     device/motorola/droid2we/audio/liba2dp.so:/system/lib/liba2dp.so
 
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES := \
     audio.primary.omap3 \
     libaudiohw_legacy \
     audio.a2dp.default \
@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
     libstagefright_omx
 
 # Radio
-PRODUCT_PACKAGES := \
+PRODUCT_PACKAGES += \
     rild \
     libril \
     libreference-ril
