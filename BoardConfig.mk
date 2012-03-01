@@ -3,6 +3,7 @@
 # Camera
 USE_CAMERA_STUB := false
 BOARD_USE_LEGACY_TOUCHSCREEN := true
+BOARD_OVERLAY_BASED_CAMERA_HAL := true
 
 # inherit from the proprietary version
 -include vendor/moto/droid2we/BoardConfigVendor.mk
