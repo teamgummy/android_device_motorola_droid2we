@@ -171,7 +171,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
     ro.com.google.gmsversion=2.3_r3 \
     ro.kernel.android.ril=yes \
-#    ro.product.max_num_touch=2 \
     ro.product.multi_touch_enabled=true \
     ro.ril.ignore.linkiperror=true \
     ro.ril.ntmodeglobal=true \
