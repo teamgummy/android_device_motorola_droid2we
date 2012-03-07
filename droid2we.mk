@@ -173,6 +173,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.ril=yes \
 #    ro.product.max_num_touch=2 \
     ro.product.multi_touch_enabled=true \
+    ro.ril.ignore.linkiperror=true \
     ro.ril.ntmodeglobal=true \
     ro.setupwizard.enable_bypass=1 \
     ro.setupwizard.mode=OPTIONAL \
