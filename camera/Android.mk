@@ -1,7 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(BOARD_OVERLAY_BASED_CAMERA_HAL),true)
-
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS    := optional
@@ -22,8 +20,10 @@ LOCAL_SHARED_LIBRARIES += \
     libcamera_client \
     libdl \
     libui \
+    libstlport \
     libcamera \
+
+include external/stlport/libstlport.mk
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif # BOARD_OVERLAY_BASED_CAMERA_HAL
