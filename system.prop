@@ -25,7 +25,7 @@ ro.mot.FTR.33857=true
 ro.mot.phonemode.vzwglobalphone=0
 ro.mot.ril.danlist=611,*611,#611,411
 ro.telephony.default_network=7
-ro.telephony.gsm-routes-us-smsc=1
+ro.telephony.gsm-routes-us-smsc=0
 
 # Audio
 persist.mot.a2dp.direct = 1

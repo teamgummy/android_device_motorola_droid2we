@@ -1,4 +1,4 @@
-#
+# Copyright (C) 2011 The Android Open Source Project
 # Copyright (C) 2012 bikedude880
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,13 +12,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Camera
-BOARD_OVERLAY_BASED_CAMERA_HAL := true
-BOARD_USE_GINGERBREAD_BINDER := true
-
-# inherit from the proprietary version
+# Use the non-open-source part, if present
 -include vendor/motorola/droid2we/BoardConfigVendor.mk
 
 # Use the part that is common between all tunas
@@ -39,6 +34,10 @@ ifdef BOARD_USES_AUDIO_LEGACY
 endif
 #TARGET_PROVIDES_LIBAUDIO := true
 
+# Camera
+BOARD_OVERLAY_BASED_CAMERA_HAL := true
+BOARD_USE_GINGERBREAD_BINDER := true
+
 # Recovery
 TARGET_PREBUILT_RECOVERY_KERNEL := device/motorola/droid2we/kernel
 BOARD_MKE2FS := device/motorola/droid2we/releaseutils/mke2fs
@@ -49,7 +48,3 @@ TARGET_PROVIDES_INIT_RC := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/usb_mass_storage/lun%d/file"
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_CUSTOM_USB_CONTROLLER := ../../device/motorola/droid2we/UsbController.cpp
-
-# Hijack
-TARGET_NEEDS_MOTOROLA_HIJACK := true
-#BOARD_HIJACK_LOG_ENABLE := true

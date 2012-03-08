@@ -1,5 +1,4 @@
 # Copyright (C) 2011 The Android Open Source Project
-# Copyright (C) 2012 bikedude880
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# This file includes all definitions that apply only to droid2we devices
+# This file includes all definitions that apply only to maguro devices
 #
-# Anything that is generic to all OMAP34xx/SGX530 products should go in the omap34com directory
+# Anything that is generic to all tuna products should go in the tuna directory
 #
 # Everything in this directory will become public
 
-#DEVICE_PACKAGE_OVERLAYS := device/motorola/droid2we/overlay
+DEVICE_PACKAGE_OVERLAYS := device/motorola/droid2we/overlay
 
 # These are the hardware-specific features
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES := \
 	frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
 	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
