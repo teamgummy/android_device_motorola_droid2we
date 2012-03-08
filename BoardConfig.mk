@@ -19,7 +19,7 @@ BOARD_OVERLAY_BASED_CAMERA_HAL := true
 BOARD_USE_GINGERBREAD_BINDER := true
 
 # inherit from the proprietary version
--include vendor/moto/droid2we/BoardConfigVendor.mk
+-include vendor/motorola/droid2we/BoardConfigVendor.mk
 
 # Use the part that is common between all tunas
 include device/motorola/omap34com/BoardConfig.mk
