@@ -19,10 +19,10 @@
 #
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS := device/motorola/droid2we/overlay
+#DEVICE_PACKAGE_OVERLAYS := device/motorola/droid2we/overlay
 
 # These are the hardware-specific features
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
 	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 

@@ -4,6 +4,9 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
+# Inherit device configuration
+$(call inherit-product, device/motorola/droid2we/droid2we.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := cm_droid2we
 PRODUCT_BRAND := verizon

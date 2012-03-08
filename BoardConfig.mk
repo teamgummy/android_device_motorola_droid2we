@@ -21,6 +21,9 @@ BOARD_USE_GINGERBREAD_BINDER := true
 # inherit from the proprietary version
 -include vendor/moto/droid2we/BoardConfigVendor.mk
 
+# Use the part that is common between all tunas
+include device/motorola/omap34com/BoardConfig.mk
+
 # Processor
 TARGET_BOOTLOADER_BOARD_NAME := droid2we
 

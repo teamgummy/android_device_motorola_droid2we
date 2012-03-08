@@ -41,6 +41,16 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PREBUILT)/bin/hijack.log_dump:system/bin/hijack.log_dump \
     $(DEVICE_PREBUILT)/etc/hijack-boot.zip:system/etc/hijack-boot.zip
 
+# Kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/motorola/droid2we/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES := \
+	$(LOCAL_KERNEL):kernel
+
 # copy all kernel modules under the "modules" directory to system/lib/modules
 PRODUCT_COPY_FILES += $(shell \
     find device/motorola/droid2we/modules -name '*.ko' \
@@ -51,16 +61,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ril.features=0x0E \
     persist.ril.modem.ttydevice=/dev/usb/tty1-3:1.4 \
     persist.ril.mux.noofchannels=8
-
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/motorola/droid2we/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
