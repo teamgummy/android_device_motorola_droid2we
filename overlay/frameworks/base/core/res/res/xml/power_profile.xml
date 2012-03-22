@@ -46,7 +46,7 @@
       <value>600000</value>  <!-- 600 MHz CPU speed -->
       <value>300000</value>  <!-- 300 MHz CPU speed -->
   </array>
-  <item name="cpu.idle">4</item>
+  <item name="cpu.idle">2</item>
   <array name="cpu.active">
       <value>300</value> <!-- TODO find out actual value -->
       <value>280</value>
