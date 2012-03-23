@@ -40,7 +40,10 @@ PRODUCT_PACKAGES += \
 	audio.primary.omap3 \
 	libaudiohw_legacy \
 	audio.a2dp.default \
-	libaudioutils
+	libaudioutils \
+	hcitool \
+	hciattach \
+	hcidump
 
 PRODUCT_PACKAGES += \
 	hijack-boot.zip \
