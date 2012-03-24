@@ -82,3 +82,7 @@ ro.HorizontalVVM=true
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 
+ro.product.use_charge_counter=1
+
+debug.enabletr=true
+ro.max.fling_velocity=4000
