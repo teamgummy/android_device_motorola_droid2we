@@ -24,18 +24,14 @@
 # Device overlay and prebuilt directories
 DEVICE_PREBUILT := device/motorola/droid2we/prebuilt
 
-# Get the long list of APNs
-PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+# APNs
+PRODUCT_COPY_FILES := $(DEVICE_PREBUILT)/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Camera
 PRODUCT_PACKAGES := \
 	Camera
 
-# Audio
-PRODUCT_COPY_FILES += \
-	device/motorola/droid2we/audio/libaudio.so:/system/lib/libaudio.so \
-	device/motorola/droid2we/audio/liba2dp.so:/system/lib/liba2dp.so
-
+# Audio + Bluetooth
 PRODUCT_PACKAGES += \
 	audio.primary.omap3 \
 	libaudiohw_legacy \
@@ -79,7 +75,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 $(call inherit-product, device/motorola/droid2we/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := cm_droid2we
+PRODUCT_NAME := full_droid2we
 PRODUCT_DEVICE := droid2we
 PRODUCT_BRAND := verizon
 PRODUCT_MODEL := DROID2 Global
