@@ -56,7 +56,7 @@ persist.mot.proximity.touch=1
 ro.min_pointer_dur=10
 ro.mot.hw.calibratedImager=1
 ro.sf.lcd_density=240
-windowsmgr.max_events_per_sec=120
+windowsmgr.max_events_per_sec=150
 
 # System
 ro.mot.dpmext = true
