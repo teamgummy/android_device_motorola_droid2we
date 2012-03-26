@@ -89,7 +89,7 @@ ro.default_usb_mode=4
 
 # Wifi
 wifi.interface = tiwlan0
-wifi.supplicant_scan_interval = 90
+wifi.supplicant_scan_interval = 180
 
 # Other
 ro.com.google.clientid=android-motorola
