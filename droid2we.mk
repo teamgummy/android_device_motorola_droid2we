@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES := $(DEVICE_PREBUILT)/etc/apns-conf.xml:system/etc/apns-conf.
 PRODUCT_PACKAGES := \
 	Camera
 
-# Audio
+# Audio + Bluetooth
 PRODUCT_COPY_FILES += \
   device/motorola/droid2we/audio/libaudio.so:/system/lib/libaudio.so \
   device/motorola/droid2we/audio/liba2dp.so:/system/lib/liba2dp.so
@@ -40,7 +40,10 @@ PRODUCT_PACKAGES += \
 	audio.primary.omap3 \
 	libaudiohw_legacy \
 	audio.a2dp.default \
-	libaudioutils
+	libaudioutils \
+	hcitool \
+	hciattach \
+	hcidump
 
 PRODUCT_PACKAGES += \
 	hijack-boot.zip \

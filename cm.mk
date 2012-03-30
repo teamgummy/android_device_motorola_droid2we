@@ -4,6 +4,9 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
+# Boot animation
+TARGET_BOOTANIMATION_NAME := vertical-480x854
+
 # Inherit device configuration
 $(call inherit-product, device/motorola/droid2we/droid2we.mk)
 
