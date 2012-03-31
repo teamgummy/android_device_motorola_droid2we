@@ -95,8 +95,8 @@ wifi.supplicant_scan_interval = 180
 # Other
 ro.com.google.clientid=android-motorola
 ro.com.motorola.smartsensor=true
-ro.HorizontalBUA=true
-ro.HorizontalVVM=true
+ro.HorizontalBUA=false
+ro.HorizontalVVM=false
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 
