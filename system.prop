@@ -68,7 +68,7 @@ ro.media.panorama.defres=2592x1456
 ro.media.panorama.frameres=848x480
 
 # Display
-mot.proximity.delay=450
+mot.proximity.delay=90
 mot.proximity.distance=60
 persist.mot.proximity.touch=1
 ro.min_pointer_dur=10
@@ -91,6 +91,8 @@ ro.default_usb_mode=4
 # Wifi
 wifi.interface = tiwlan0
 wifi.supplicant_scan_interval = 180
+wifi.hotspot.ti = 1
+wifi.ap.interface = tiap0
 
 # Other
 ro.com.google.clientid=android-motorola
@@ -101,6 +103,9 @@ ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 
 ro.product.use_charge_counter=1
-
-debug.enabletr=true
 ro.max.fling_velocity=4000
+debug.enabletr=false
+
+# force enable or force disable of hw renderer for the listed processes
+#hwui.whitelist=com.android.browser
+#hwui.blacklist=com.android.systemui:com.cyanogenmod.CMWallpapers:com.cyanogenmod.trebuchet
