@@ -86,7 +86,7 @@ ro.service.start.smc=1
 persist.mot.usb.mediasync = 0
 persist.sys.usb.config=mass_storage,adb
 ro.default_usb_mode=4
-#ro.usb.use_custom_service=1
+ro.usb.use_custom_service=1
 
 # Wifi
 wifi.interface = tiwlan0
@@ -105,6 +105,8 @@ ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/
 ro.product.use_charge_counter=1
 ro.max.fling_velocity=4000
 debug.enabletr=false
+debug.egl.callstack=1
+hwui.render_dirty_regions=false
 
-# force enable or force disable of hw renderer for the listed processes
+# Force disable of hw renderer for the listed processes
 hwui.blacklist=com.android.vending:com.tmobile.themechooser:com.bel.android.dspmanager:com.android.mms:mobi.mgeek.TunnyBrowser:com.android.wallpaper.livepicker
