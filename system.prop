@@ -7,7 +7,7 @@ persist.radio.ap.phonetype=2
 persist.radio.cdma.min=0
 persist.radio.vzw.cdma.mdn=
 persist.ril.ecclist=911,*911,#911
-persist.ril.modem.mode =1
+persist.ril.modem.mode=1
 rild.libpath=/system/lib/libmoto_ril.so
 rild.libargs=-d /dev/ttyS0
 ro.ril.hsxpa=2
@@ -46,7 +46,7 @@ ro.telephony.gsm-routes-us-smsc=0
 ro.telephony.ignore.linkiperror=true
 
 # Audio
-persist.mot.a2dp.direct = 1
+persist.mot.a2dp.direct=1
 
 # Camera (settings from GB originally)
 ro.media.camcorder.d1NTSC=3gp,h264,30,6000000,aac,96000,44100,2
@@ -77,22 +77,22 @@ ro.sf.lcd_density=240
 windowsmgr.max_events_per_sec=150
 
 # System
-ro.mot.dpmext = true
+ro.mot.dpmext=true
 ro.mot.master_clear.shredsd=false
 ro.product.use_charge_counter=1
 ro.service.start.smc=1
 
 # USB
-persist.mot.usb.mediasync = 0
+persist.mot.usb.mediasync=0
 persist.sys.usb.config=mass_storage,adb
 ro.default_usb_mode=4
 ro.usb.use_custom_service=1
 
 # Wifi
-wifi.interface = tiwlan0
-wifi.supplicant_scan_interval = 180
-wifi.hotspot.ti = 1
-wifi.ap.interface = tiap0
+wifi.interface=tiwlan0
+wifi.supplicant_scan_interval=180
+wifi.hotspot.ti=1
+wifi.ap.interface=tiap0
 
 # Other
 ro.com.google.clientid=android-motorola
@@ -110,3 +110,6 @@ hwui.render_dirty_regions=false
 
 # Force disable of hw renderer for the listed processes
 hwui.blacklist=com.android.vending:com.tmobile.themechooser:com.bel.android.dspmanager:com.android.mms:mobi.mgeek.TunnyBrowser:com.android.wallpaper.livepicker
+
+# CpuGovernorService (require ondemand cpu governor)
+dev.pm.dyn_samplingrate=1

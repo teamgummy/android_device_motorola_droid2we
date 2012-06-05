@@ -24,10 +24,6 @@
 # Device overlay and prebuilt directories
 DEVICE_PREBUILT := device/motorola/droid2we/prebuilt
 
-# Camera
-PRODUCT_PACKAGES := \
-	Camera
-
 # Audio + Bluetooth
 PRODUCT_COPY_FILES += \
 	device/motorola/droid2we/audio/libaudio.so:/system/lib/libaudio.so \
