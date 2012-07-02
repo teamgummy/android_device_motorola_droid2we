@@ -26,7 +26,7 @@ static const struct sensor_t sSensorList[] = {
     { "KXTF9 3-axis Accelerometer",
         "Kionix",
         1, SENSORS_HANDLE_BASE + SENSOR_TYPE_ACCELEROMETER, SENSOR_TYPE_ACCELEROMETER,
-        8.0f*9.81f, KXTF9_CONVERT_A, 0.57f, 0, { } },
+        8.0f*9.81f, KXTF9_CONVERT_A, 0.6f, 0, { } },
 /*
     { "AK8973 Accelerometer sensor",
         "Asahi Kasei",
@@ -48,15 +48,16 @@ static const struct sensor_t sSensorList[] = {
         1, SENSORS_HANDLE_BASE + SENSOR_TYPE_TEMPERATURE, SENSOR_TYPE_TEMPERATURE,
         85.0f, 1.0f, 0.2f, 0, { } },
 
-    { "ISL29030 Proximity Sensor",
-        "Intersil Corporation",
-        1, SENSORS_HANDLE_BASE + SENSOR_TYPE_PROXIMITY, SENSOR_TYPE_PROXIMITY,
-        100.0f, 1.0f, 0.5f, 0, { } },
-
     { "ISL29030 Light Sensor",
         "Intersil Corporation",
         1, SENSORS_HANDLE_BASE + SENSOR_TYPE_LIGHT, SENSOR_TYPE_LIGHT,
-        16384.0f, 1.0f, 0.5f, 0, { } },
+        8192.0f, 1.0f, 0.5f, 0, { } },
+
+    /* must be kept as the last one */
+    { "ISL29030 Proximity Sensor",
+        "Intersil Corporation",
+        1, SENSORS_HANDLE_BASE + SENSOR_TYPE_PROXIMITY, SENSOR_TYPE_PROXIMITY,
+        100.0f, 1.0f, 25.0f, 0, { } },
 };
 
 /*****************************************************************************/
