@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
 	device/motorola/droid2we/audio/liba2dp.so:/system/lib/liba2dp.so
 
 PRODUCT_PACKAGES += \
-	sensors.droid2we \
 	audio.primary.omap3 \
 	libaudiohw_legacy \
 	audio.a2dp.default \
@@ -40,11 +39,11 @@ PRODUCT_PACKAGES += \
 	hcidump
 
 PRODUCT_PACKAGES += \
-	hijack-boot.zip \
+	hijack-boot.zip
 
 # Hijack files
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PREBUILT)/etc/hijack-boot.zip:system/etc/hijack-boot.zip
+	device/motorola/droid2we/hijack-boot.zip:system/etc/hijack-boot.zip
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
