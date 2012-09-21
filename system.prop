@@ -72,6 +72,7 @@ mot.proximity.delay=90
 mot.proximity.distance=60
 persist.mot.proximity.touch=1
 ro.mot.hw.calibratedImager=1
+ro.sf.lcd_density=240
 
 # System
 ro.mot.dpmext=true
